@@ -1,0 +1,21 @@
+{
+  "name": "caven.dev",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^2.0.15"
+  },
+  "devDependencies": {
+    "@unocss/preset-uno": "^0.50.1",
+    "@unocss/reset": "^0.50.1",
+    "astro-icon": "^0.8.0",
+    "unocss": "^0.50.1"
+  }
+}

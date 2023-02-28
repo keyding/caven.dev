@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro"
+import SayHey from "../components/SayHey.astro"
+import Personal from "../components/Personal.astro"
+import AboutMe from "../components/About.astro"
+import FollowMe from "../components/Follow.astro"
+import Copyright from "../components/Copyright.astro"
+import SwitchMode from "../components/SwitchMode.astro"
+---
+
+<Layout title="Caven Ding">
+  <main
+    class="font-display max-w-5xl h-screen mx-auto box-border pt-16 pr-8 pb-8 pl-8">
+    <div class="leading-normal tracking-widest font-bio h-full relative">
+      <SayHey />
+      <Personal />
+      <AboutMe />
+      <FollowMe />
+      <!-- <SwitchMode /> -->
+      <Copyright />
+    </div>
+  </main>
+</Layout>
