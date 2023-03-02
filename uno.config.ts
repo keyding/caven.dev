@@ -7,7 +7,7 @@ export default defineConfig({
     fontFamily: {
       display:
         '"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif',
-      rm: '"Rounded Mplus 1c"',
+      vr: "varela_round",
     },
     colors: {
       sun: "#FEC74A",
