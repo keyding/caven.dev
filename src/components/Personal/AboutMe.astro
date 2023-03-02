@@ -1,0 +1,23 @@
+---
+import BioCard from "../BioCard.astro"
+
+const skillList = ["Senior Frontend Developer", "Freelancer", "Blogger"]
+---
+
+<BioCard
+  title="About me"
+  type="about">
+  <div class="relative -mb-4">
+    {
+      skillList.map((item) => (
+        <div class="flex items-center mb-4">
+          <div class="i-fluent-emoji-flat:backhand-index-pointing-right w-5 h-5" />
+          <div class="font-rm text-base text-slate-900 font-medium ml-4">{item}</div>
+        </div>
+      ))
+    }
+    <!-- <div
+      class="i-ph:arrow-circle-right w-8 h-8 text-slate-300 absolute -right-0.5 -bottom-0.5 cursor-pointer transition hover:text-slate-900">
+    </div> -->
+  </div>
+</BioCard>

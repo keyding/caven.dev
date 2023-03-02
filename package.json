@@ -13,9 +13,13 @@
     "astro": "^2.0.15"
   },
   "devDependencies": {
+    "@iconify-json/fluent-emoji-flat": "^1.1.10",
+    "@iconify-json/ic": "^1.1.13",
+    "@iconify-json/ph": "^1.1.4",
+    "@iconify-json/uil": "^1.1.4",
+    "@unocss/preset-icons": "^0.50.2",
     "@unocss/preset-uno": "^0.50.1",
     "@unocss/reset": "^0.50.1",
-    "astro-icon": "^0.8.0",
     "unocss": "^0.50.1"
   }
 }

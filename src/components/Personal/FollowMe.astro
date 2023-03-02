@@ -1,0 +1,31 @@
+---
+import BioCard from "../BioCard.astro"
+const accounts = [
+  {
+    label: "Twitter",
+    link: "https://twitter.com/dodobirdnotfly",
+  },
+  {
+    label: "GitHub",
+    link: "https://github.com/keyding",
+  },
+]
+---
+
+<BioCard
+  title="Follow me"
+  type="follow">
+  <div class="flex items-center justify-between">
+    {
+      accounts.map((account) => (
+        <a
+          href={account.link}
+          target="_blank"
+          class="flex items-center justify-center rounded-full py-3 px-4 border border-slate-900 shadow-2 bg-white cursor-pointer transition hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-4">
+          <div class="text-sm font-rm font-600">{account.label}</div>
+          <div class="i-ic:round-arrow-outward w-5 h-5 text-slate-900 ml-2" />
+        </a>
+      ))
+    }
+  </div>
+</BioCard>

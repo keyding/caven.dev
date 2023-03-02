@@ -1,23 +1,33 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import Content from "../layouts/Content.astro"
+import Header from "../layouts/Header.astro"
+import Footer from "../layouts/Footer.astro"
+
 import SayHey from "../components/SayHey.astro"
-import Personal from "../components/Personal.astro"
-import AboutMe from "../components/About.astro"
-import FollowMe from "../components/Follow.astro"
+import Personal from "../components/Personal/Index.astro"
+import PostList from "../components/PostList.astro"
+
+import SwitchTheme from "../components/SwitchTheme.astro"
 import Copyright from "../components/Copyright.astro"
-import SwitchMode from "../components/SwitchMode.astro"
 ---
 
 <Layout title="Caven Ding">
-  <main
-    class="font-display max-w-5xl h-screen mx-auto box-border pt-16 pr-8 pb-8 pl-8">
-    <div class="leading-normal tracking-widest font-bio h-full relative">
-      <SayHey />
-      <Personal />
-      <AboutMe />
-      <FollowMe />
-      <!-- <SwitchMode /> -->
-      <Copyright />
-    </div>
-  </main>
+  <div
+    class="font-display h-screen overflow-auto transition duration-300"
+    id="main">
+    <main class="min-h-screen mx-auto p-8 pt-12 pb-6 flex flex-col md:w-5xl md:pt-16">
+      <Header><SayHey /></Header>
+      <Content>
+        <Personal slot="bio" />
+        <PostList slot="post" />
+      </Content>
+      <Footer>
+        <SwitchTheme />
+        <Copyright />
+      </Footer>
+    </main>
+  </div>
 </Layout>
+
+<script src="../scripts/setDefaultTheme.ts"></script>
