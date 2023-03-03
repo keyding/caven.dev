@@ -21,11 +21,17 @@ const accounts = [
         <a
           href={account.link}
           target="_blank"
-          class="flex items-center justify-center rounded-full py-3 px-4 border border-slate-900 shadow-2 bg-white cursor-pointer transition hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-4">
+          class="flex items-center justify-center rounded-full py-3 px-4 border border-slate-900 shadow-2 bg-white cursor-pointer transition hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-4 hover:scale-105">
           <div class="text-sm font-vr font-600 tracking-wide">{account.label}</div>
           <div class="i-ic:round-arrow-outward w-5 h-5 text-slate-900 ml-2" />
         </a>
       ))
     }
   </div>
+  <a
+    href="mailto:dodobirdnotfly@gmail.com?subject=Let%20me%20get%20to%20know%20you%21"
+    class="flex items-center justify-center rounded-full py-3 px-4 border border-slate-900 shadow-2 bg-white cursor-pointer transition mt-6 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-4 hover:scale-105">
+    <div class="i-uil:fast-mail w-5 h-5 text-slate-900 -mb-0.5"></div>
+    <div class="ml-2 text-sm font-vr font-600 tracking-wide">cavenasdev@gmail.com</div>
+  </a>
 </BioCard>
