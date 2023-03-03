@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "varela_round";
+  src: url("/fonts/varela_round.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  min-height: 100vh;
+}
+.theme-sun {
+  background: #fec74a;
+}
+.theme-forest {
+  background: #32d583;
+}
+.theme-sea {
+  background: #62a3ff;
+}

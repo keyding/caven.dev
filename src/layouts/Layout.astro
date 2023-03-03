@@ -1,5 +1,4 @@
 ---
-import "../styles/font.css"
 export interface Props {
   title: string
 }
@@ -30,26 +29,3 @@ const { title } = Astro.props
     <slot />
   </body>
 </html>
-<style is:global>
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  html,
-  body {
-    height: 100vh;
-  }
-  .theme-sun {
-    background: #fec74a;
-  }
-  .theme-forest {
-    background: #32d583;
-  }
-  .theme-sea {
-    background: #62a3ff;
-  }
-  /* code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-	} */
-</style>
