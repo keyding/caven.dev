@@ -23,6 +23,16 @@ export function setAboutMeIconTheme(theme: Themes) {
     getElementById(themeName)?.classList[themeName === theme ? "remove" : "add"]("hidden")
   })
 }
+export function setMetaThemeColor(theme: Themes) {
+  const ColorMap = {
+    [Themes.Sun]: "#FEC74A",
+    [Themes.Sea]: "#62A3FF",
+    [Themes.Forest]: "#32D583",
+  }
+  const themeColorMeta =
+    Cache.themeColorMeta || (Cache.themeColorMeta = document.querySelector('meta[name="theme-color"]'))
+  themeColorMeta?.setAttribute("content", ColorMap[theme])
+}
 export function bindSwitchThemeEvent() {
   getElementById("theme-icons")?.addEventListener("click", (event) => {
     if (event && event.target instanceof HTMLElement) {
@@ -32,6 +42,7 @@ export function bindSwitchThemeEvent() {
 
       setBackgroundTheme(theme, getLocalTheme())
       setAboutMeIconTheme(theme)
+      setMetaThemeColor(theme)
       saveThemeToLocal(theme)
       setFocusLine(theme)
     }
@@ -59,6 +70,7 @@ function getElementById(id: string) {
   saveThemeToLocal(theme)
   setBackgroundTheme(theme)
   setAboutMeIconTheme(theme)
+  setMetaThemeColor(theme)
   setFocusLine(theme)
   bindSwitchThemeEvent()
 })()
