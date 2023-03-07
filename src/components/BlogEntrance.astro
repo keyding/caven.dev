@@ -1,0 +1,21 @@
+---
+import Card from "./Card.astro"
+---
+
+<Card>
+  <div class="flex flex-col items-center md:h-32 md:flex-row">
+    <div class="font-vr md:mr-4">
+      <div class="text-3xl text-slate-900 font-black tracking-wider">
+        My Blog
+        <div class="text-sm text-slate-400 italic mt-1">Under construction ...</div>
+      </div>
+      <div class="text-base text-slate-300 mt-6 md:mt-8">
+        Recording daily notes, articles, and other related materials during development.
+      </div>
+    </div>
+    <div
+      class="flex items-center justify-center w-40 h-12 mt-8 rounded-12 border border-slate-900 shadow-2 cursor-pointer transition shrink-0 md:h-28 md:w-12 md:mt-0 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-4 hover:scale-105">
+      <div class="i-ic:round-arrow-outward w-6 h-6"></div>
+    </div>
+  </div>
+</Card>
