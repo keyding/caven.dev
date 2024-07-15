@@ -2,22 +2,20 @@
 import Card from "./Card.astro"
 ---
 
-<div class="mt-8">
-  <Card>
-    <div class="flex flex-col items-center md:flex-row">
-      <div class="font-vr self-start flex-1 md:mr-4">
-        <div class="text-2xl text-slate-900 font-black tracking-wider md:text-3xl">My Resume</div>
-        <div class="text-sm text-slate-400 italic mt-1 tracking-wider font-black">I'm a Senior Frontend Developer.</div>
-        <div class="mt-6 text-base text-slate-300">
-          Feel free to have a coffee talk with me.
-        </div>
+<Card>
+  <div class="flex flex-col items-center md:flex-row">
+    <div class="font-vr self-start flex-1 md:mr-4">
+      <div class="text-2xl text-slate-900 font-black tracking-wider md:text-3xl">My Resume</div>
+      <div class="text-sm text-slate-400 italic mt-1 tracking-wider font-black">I'm a Senior Frontend Developer.</div>
+      <div class="mt-6 text-base text-slate-300">
+        Feel free to have a coffee talk with me.
       </div>
-      <a
-        href="/resume.pdf"
-        target="_blank"
-        class="flex items-center justify-center w-40 h-12 mt-8 rounded-12 border border-slate-900 shadow-2 cursor-pointer transition shrink-0 md:h-28 md:w-12 md:mt-0 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-4 hover:scale-105">
-        <div class="i-ic:round-arrow-outward w-6 h-6"></div>
-      </a>
     </div>
-  </Card>
-</div>
+    <a
+      href="/resume.pdf"
+      target="_blank"
+      class="flex items-center justify-center w-40 h-12 mt-8 rounded-12 border border-slate-900 shadow-2 cursor-pointer transition shrink-0 md:h-28 md:w-12 md:mt-0 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-4 hover:scale-105">
+      <div class="i-ic:round-arrow-outward w-6 h-6"></div>
+    </a>
+  </div>
+</Card>

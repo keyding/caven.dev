@@ -9,22 +9,20 @@ interface Props {
 const { title, type } = Astro.props
 ---
 
-<div class="mb-8">
-  <Card>
-    <div class="flex items-center justify-between">
-      {type === "name" && <div class="w-16 h-16 i-fluent-emoji-flat:feather" />}
-      {type === "about" && <div class="w-16 h-16 i-fluent-emoji-flat:person-tipping-hand" />}
-      {type === "follow" && <div class="w-16 h-16 i-fluent-emoji-flat:saluting-face" />}
-      <div class="flex flex-col">
-        <div class="i-uil-paragraph w-6 h-6 text-slate-300 self-start"></div>
-        <div class="font-vr text-sm text-slate-300 text-center italic tracking-wide px-8 -my-0.5">
-          {title}
-        </div>
-        <div class="i-uil-paragraph w-6 h-6 text-slate-300 rotate-180 self-end"></div>
+<Card>
+  <div class="flex items-center justify-between">
+    {type === "name" && <div class="w-16 h-16 i-fluent-emoji-flat:feather" />}
+    {type === "about" && <div class="w-16 h-16 i-fluent-emoji-flat:person-tipping-hand" />}
+    {type === "follow" && <div class="w-16 h-16 i-fluent-emoji-flat:saluting-face" />}
+    <div class="flex flex-col">
+      <div class="i-uil-paragraph w-6 h-6 text-slate-300 self-start"></div>
+      <div class="font-vr text-sm text-slate-300 text-center italic tracking-wide px-8 -my-0.5">
+        {title}
       </div>
+      <div class="i-uil-paragraph w-6 h-6 text-slate-300 rotate-180 self-end"></div>
     </div>
-    <div class="mt-6">
-      <slot />
-    </div>
-  </Card>
-</div>
+  </div>
+  <div class="mt-6">
+    <slot />
+  </div>
+</Card>
