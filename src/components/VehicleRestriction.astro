@@ -1,0 +1,22 @@
+---
+import Card from "./Card.astro"
+---
+
+<Card>
+  <div class="flex flex-col items-center md:flex-row">
+    <div class="font-vr self-start flex-1 md:mr-4">
+      <div class="text-2xl text-slate-900 font-black tracking-wider md:text-3xl">Vehicle Restriction</div>
+      <div class="text-sm text-slate-400 italic mt-1 tracking-wider font-black">Vehicle Restriction Calendar(1&6 Only, 2025, China Tianjin)</div>
+      <div class="mt-6 text-base text-slate-300">
+        Download the calendar file and add it to your calendar app.<br>
+        <span class="text-slate-900 font-black">Subscribe Link: https://caven.dev/vehicle-restriction.ics</span>
+      </div>
+    </div>
+    <a
+      href="/vehicle-restriction.ics"
+      target="_blank"
+      class="flex items-center justify-center w-40 h-12 mt-8 rounded-12 border border-slate-900 shadow-2 cursor-pointer transition shrink-0 md:h-28 md:w-12 md:mt-0 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-4 hover:scale-105">
+      <div class="i-ic:round-arrow-outward w-6 h-6"></div>
+    </a>
+  </div>
+</Card>
